@@ -5,8 +5,8 @@
 
 :root {
   --dark-color: #353940;
-  --secondary-color: #3e92a3;
-  --light-color: #dfe0d4;
+  --secondary-color: #0cca98;
+  --light-color: #ece8d9;
   --hicon-color: #ff5335;
 
   --main-font: "Lato", sans-serif;
@@ -239,6 +239,7 @@ a > .fab {
 }
 
 .tool {
+  border-radius: 3px;
   background-color: var(--secondary-color);
   color: var(--dark-color);
   margin: 3px 5px 3px 0;
