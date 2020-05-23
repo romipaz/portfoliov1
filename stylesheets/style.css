@@ -226,6 +226,7 @@ a > .fab {
   text-align: left;
   font-size: 18px;
   line-height: 1.5em;
+  margin-bottom: 20px;
 }
 
 .project-tools {
@@ -427,6 +428,7 @@ a > .fab {
 
   .project-sum {
     font-size: 1.6em;
+    margin-left: 0;
   }
   .project-tools {
     font-size: 1.2em;
