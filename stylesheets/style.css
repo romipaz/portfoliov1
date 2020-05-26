@@ -105,6 +105,10 @@ body {
   height: 500px;
 }
 
+.greeting {
+  width: 200px;
+}
+
 .title-name {
   font-size: 2.5em;
   font-family: var(--main-font);
@@ -169,7 +173,8 @@ a > .fab {
   border-top-right-radius: 20px;
   text-align: center;
   padding: 10px;
-  font-size: 1.4em;
+  font-size: 1em;
+  text-transform: capitalize;
 }
 
 .project {
@@ -295,6 +300,10 @@ a > .fab {
   }
 
   .list-link a {
+    font-size: 1.4em;
+  }
+
+  .projects-container > h3 {
     font-size: 1.4em;
   }
 
