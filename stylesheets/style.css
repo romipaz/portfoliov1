@@ -11,6 +11,8 @@
 
   --main-font: "Lato", sans-serif;
   --secondary-font: "Open Sans", sans-serif;
+
+  --transition: all 0.3s linear;
 }
 
 body {
@@ -19,6 +21,14 @@ body {
   padding: 0;
   font-size: 16px;
   font-family: var(--secondary-font);
+}
+
+.menu {
+  background-color: var(--secondary-color);
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 /*Header style*/
@@ -33,6 +43,9 @@ body {
 }
 
 .logo {
+  position: absolute;
+  left: 20px;
+  top: 20px;
   width: 60px;
   height: 50px;
 }
@@ -52,19 +65,6 @@ body {
 
 .navbar-ul.show {
   display: flex;
-}
-
-.hamburger {
-  cursor: pointer;
-  margin-right: 0;
-  font-size: 3em;
-  background-color: var(--dark-color);
-  border: none;
-  color: var(--light-color);
-}
-
-.hamburger:focus {
-  outline: none;
 }
 
 .list {
@@ -100,9 +100,10 @@ body {
   background-color: var(--dark-color);
   display: flex;
   flex-direction: column;
+  align-content: center;
   justify-content: center;
-  align-items: flex-start;
-  height: 500px;
+  align-items: center;
+  height: 90vh;
 }
 
 .greeting {
@@ -139,6 +140,7 @@ a > .fab {
 .arrow-container {
   width: 100%;
   text-align: right;
+  padding-bottom: 30px;
 }
 
 .arrow-container > a {
@@ -171,10 +173,11 @@ a > .fab {
   border-top: 2px solid var(--secondary-color);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  color: var(--secondary-color);
   text-align: center;
   padding: 10px;
   font-size: 1em;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .project {
@@ -252,17 +255,130 @@ a > .fab {
   padding: 3px;
 }
 
-/*Footer Contact style*/
+/*Aside Sidebar style*/
 
-.contact {
+.sidebar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary-color);
+  display: grid;
+  grid-template-rows: auto 1fr 2fr auto;
+  row-gap: 1em;
+  box-shadow: var(--secondary-color);
+  transition: var(--transition);
+  color: var(--dark-color);
+  transform: translate(-120%);
+}
+
+.sidebar-toggle {
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 2em;
+  padding: 10px;
+  border: none;
+}
+
+.sidebar-toggle:focus {
+  outline: none;
+}
+
+.sidebar-header {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 100%;
+}
+
+.sidebar-logo {
+  width: 100%;
+  height: 230px;
+}
+
+.close-btn {
+  display: flex;
+  align-self: flex-end;
   background-color: var(--secondary-color);
   color: var(--dark-color);
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  border: none;
+  font-size: 3em;
+  padding: 0;
+  padding-bottom: 30px;
+  height: 100%;
+}
+
+.close-btn:focus {
+  outline: none;
+}
+
+.sidebar-index {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-rows: 20% 20% 10%;
+  row-gap: 1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.sidebar-index > .list-link a {
+  font-size: 1.5em;
+  padding: 0px;
+  color: var(--light-color);
+}
+
+.sidebar-index > .list-link > a:hover {
+  padding-bottom: 5px;
+  border-bottom: 3px solid var(--dark-color);
+  text-decoration: none;
+}
+
+.sidebar-link {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 100;
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.sidebar-link li {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-link i {
+  font-size: 1.8em;
+}
+
+.sidebar-link > .list-link > a {
+  padding: 0;
+  font-size: 1.5em;
+}
+
+.show-sidebar {
+  transform: translate(0);
+}
+
+/*Footer*/
+
+.contact {
+  margin-bottom: 50px;
+}
+
+.contact-list {
   display: flex;
+  align-content: center;
   justify-content: center;
-  align-items: center;
-  padding: 10px;
+  list-style-type: none;
+}
+
+.contact-link a > .fab {
+  color: var(--light-color);
 }
 
 /*TABLET---------------------------------------------------------------------------------------*/
@@ -278,7 +394,7 @@ a > .fab {
   }
 
   header {
-   width: 100%;
+    width: 100%;
   }
 
   .navbar {
@@ -353,13 +469,6 @@ a > .fab {
     font-size: 0.8em;
   }
 
-  .arrow-container {
-    display: none;
-  }
-  .contact {
-    margin-top: 80px;
-  }
-
   .project-header a {
     font-size: 1.3em;
   }
@@ -382,12 +491,23 @@ a > .fab {
   .tool {
     padding: 5px;
   }
+
+  .arrow-container > a {
+    font-size: 2em;
+  }
+
+  .sidebar {
+    width: 400px;
+  }
+
+  .sidebar-index {
+    width: 400px;
+  }
 }
 
 /* desktop, a partir de 1200px -------*/
 
 @media screen and (min-width: 1200px) {
-
   .navbar {
     padding-right: 50px;
     padding-left: 100px;
@@ -447,8 +567,7 @@ a > .fab {
     padding: 8px;
     margin: 5px;
   }
-
-  .contact {
-    margin-top: 100px;
+  .menu {
+    display: none;
   }
 }
