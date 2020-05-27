@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <script src="https://kit.fontawesome.com/cee649fe4c.js" crossorigin="anonymous"></script>
 
 </head>
+
 <body>
     <header>
         <nav class="navbar">
@@ -21,46 +23,80 @@
             </ul>
         </nav>
     </header>
-    <section class="about">
+    <section class="about-section">
         <div class="about-title">
-            <h2>About</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic numquam autem non sint itaque. Earum sed ea amet eius nobis harum commodi praesentium quaerat, ad sunt magnam, animi, id laborum.</p>
+            <h2>About me</h2>
         </div>
         <div class="about-center section-center">
-            <article>
-                <img src="./images/about.jpg" alt="about picture">
+            <div class="about-img-cont">
+                <article class="about-img">
+                
+                    <!--  <img src="./images/about.jpg" alt="about picture"> -->
+                 </article>
+            </div>
+
+            <article class="about">
+                <!--btn container-->
+                <div class="btn-cont">
+                    <button class="tab-btn active" data-id="background">background</button>
+                    <button class="tab-btn" data-id="skills">skills</button>
+                    <button class="tab-btn" data-id="goals">goals</button>
+                </div>
+                <article class="about-content">
+                    <!--single item-->
+                    <div class="content active" id="background">
+                        <h4>Background</h4>
+                        <!--background-->
+                        <p>コンテンツの内容ではなく、純粋にデザインを評価する場合にこれらの文章は役にたちます。人間は文章を読んでその意味を理解してしまうと、その他の部分への評価に影響を与えてしまうと言われていることがその理由です。では、日本語の場合はどうでしょう。前述のラテン文字とは違い、日本語の表記体系は非常に複雑です。ひらがな・カタカナ・漢字・数字・アルファベットを織り交ぜて記述されるため、Lorem
+                            ipsumでは全く代用できません。.</p>
+                    </div>
+                    <!--end of single item-->
+                    <!--single item-->
+                    <div class="content" id="skills">
+                        <h4>Skills</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam autem praesentium temporibus, libero itaque ducimus recusandae provident velit repellendus saepe, quisquam, repellat vel nihil deserunt dicta! Porro cum minima a!</p>
+                    </div>
+                    <!--end of single item-->
+                    <!--single item-->
+                    <div class="content" id="goals">
+                        <h4>goals</h4>
+                        <p>ヘッケはこれらのL-函数が全複素平面へ有理型接続を持ち、指標が自明であるときには s = 1 でオーダー 1 である極を持ち、それ以外では解析的であることを証明した。原始ヘッケ指標（原始ディリクレ指標に同じ方法である modulus に相対的に定義された）に対し、ヘッケは、これらのL-函数が指標の L-函数の函数等式を満たし、L-函数の複素共役指標であることを示した。</p>
+                    </div>
+                    <!--end of single item-->
+                </article>
             </article>
-            <article></article>
+
         </div>
     </section>
-</section>
-<div class="menu"> <button class="sidebar-toggle" aria-label="Sidebar Toggle Button">
-        <i class="fas fa-bars"></i> </button></div>
-<aside class="sidebar" id="sidebar">
-    <div class="sidebar-header">
-        <a href="#"><img class="sidebar-logo" src="./images/logopixel.png" alt="logo"></a>
-    </div>
-    <ul class="sidebar-link">
-        <li class="list-link">
-            <a href="https://github.com/romipaz" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
-        </li>
-        <li class="list-link">
-            <a href="https://www.linkedin.com/in/rominapaz/" target="_blank" rel="noreferrer"><i
-                    class="fab fa-linkedin"></i></a>
-        </li>
-        <li class="list-link">
-            <a href="https://twitter.com/_rpaz" target="_blank" rel="noreferrer"><i class="fab fa-twitter"></i></a>
-        </li>
-    </ul>
-    <ul class="sidebar-index" id="sidebar-index">
-        <li class="list-link"><a href="./index.html#projects">Projects</a></li>
-        <li class="list-link"><a href="./index.html#contact">Contact</a></li>
-        <li class="list-link"><a href="#">About</a></li>
-    </ul>
-    <button class="close-btn" aria-label="Close Sidebar Button">
-        <i class="fas fa-times"></i>
-    </button>
-</aside>
-<script src="./js/main.js"></script>
+    </section>
+    <div class="menu"> <button class="sidebar-toggle" aria-label="Sidebar Toggle Button">
+            <i class="fas fa-bars"></i> </button></div>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <a href="#"><img class="sidebar-logo" src="./images/logopixel.png" alt="logo"></a>
+        </div>
+        <ul class="sidebar-link">
+            <li class="list-link">
+                <a href="https://github.com/romipaz" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
+            </li>
+            <li class="list-link">
+                <a href="https://www.linkedin.com/in/rominapaz/" target="_blank" rel="noreferrer"><i
+                        class="fab fa-linkedin"></i></a>
+            </li>
+            <li class="list-link">
+                <a href="https://twitter.com/_rpaz" target="_blank" rel="noreferrer"><i class="fab fa-twitter"></i></a>
+            </li>
+        </ul>
+        <ul class="sidebar-index" id="sidebar-index">
+            <li class="list-link"><a href="./index.html#projects">Projects</a></li>
+            <li class="list-link"><a href="./index.html#contact">Contact</a></li>
+            <li class="list-link"><a href="#">About</a></li>
+        </ul>
+        <button class="close-btn" aria-label="Close Sidebar Button">
+            <i class="fas fa-times"></i>
+        </button>
+    </aside>
+    <script src="./js/main.js"></script>
 </body>
+
 </html>

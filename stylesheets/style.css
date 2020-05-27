@@ -381,6 +381,86 @@ a > .fab {
   color: var(--light-color);
 }
 
+/*ABOUT SECTION*/
+
+.about-title {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  text-align: right;
+  margin: 10px 20px 5px 0;
+}
+
+.about-section {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  color: var(--light-color);
+  margin: 0;
+}
+
+.about-center {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.about-img-cont{
+  margin-bottom: 30px;
+}
+
+.about-img {
+  margin: 0;
+  width: 300px;
+  height: 300px;
+  background: url('../images/about.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 100%;
+  border: 5px solid var(--secondary-color);  
+}
+
+.about {
+  padding-bottom: 50px;
+}
+
+.content {
+  display: none;
+  background-color: var(--dark-color);
+  padding: 20px;
+}
+
+.content.active {
+  display: block;
+  padding: 20px;
+  min-height: 300px;
+  color: var(--dark-color);
+  background-color: var(--light-color);
+}
+
+.tab-btn {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  text-transform: capitalize;
+  border: none;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 10px 20px;
+}
+
+.tab-btn.active {
+  background-color: var(--secondary-color);
+  color: var(--dark-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.tab-btn:focus {
+  outline: none;
+}
+
+.tab-btn:hover {
+  border: 1px solid var(--secondary-color);
+}
+
 /*TABLET---------------------------------------------------------------------------------------*/
 
 @media all and (min-width: 768px) {
@@ -503,6 +583,25 @@ a > .fab {
   .sidebar-index {
     width: 400px;
   }
+
+  .about-section {
+    margin: 50px;
+  }
+
+  .about-center {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .about-img {
+    margin: 0;
+    width: 300px;
+    height: 300px;
+    background: url('../images/about.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid var(--secondary-color);  
+    border-radius: 0%;
+  }
 }
 
 /* desktop, a partir de 1200px -------*/
@@ -573,5 +672,47 @@ a > .fab {
   }
   .menu {
     display: none;
+  }
+
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+
+  .about-center {
+    display: flex;
+    margin-top: 50px;
+  }
+
+  .about {
+    width: 50vw;
+  }
+
+  .content.active {
+    display: block;
+    height: 289px;
+    padding: 20px;
+    color: var(--dark-color);
+    background-color: var(--light-color);
+  }
+
+  .about-img-cont{
+    margin-bottom: 30px;
+  }
+  
+  .about-img {
+    margin: 0;
+    width: 350px;
+    height: 350px;
+    background: url('../images/about.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid var(--secondary-color);  
+    border-radius: 0%;
   }
 }
