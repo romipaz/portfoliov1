@@ -690,7 +690,7 @@ a > .fab {
   }
 
   .about {
-    width: 50vw;
+    width: 45vw;
   }
 
   .content.active {
@@ -714,5 +714,14 @@ a > .fab {
     background-size: cover;
     border: 5px solid var(--secondary-color);  
     border-radius: 0%;
+  }
+
+  .content.active>h4 {
+    font-size: 1.2em;
+  }
+
+  .content.active> p {
+    font-size: 1.1em;
+    line-height: 1.5em;
   }
 }
