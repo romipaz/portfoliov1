@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romi Paz - About Me</title>
+    <link rel="icon" href="./images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <script src="https://kit.fontawesome.com/cee649fe4c.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="./index.html"><img class="logo" src="./images/logopixel.png" alt="logo"></a>
+            <ul class="navbar-ul" id="navbar-ul">
+                <li class="list-link"><a href="./index.html">Home</a></li>
+                <li class="list-link"><a href="./index.html#projects">Projects</a></li>
+                <li class="list-link"><a href="./index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="about-section">
+        <div class="about-title">
+            <h2>About me</h2>
+        </div>
+        <div class="about-center section-center">
+            <div class="about-img-cont">
+                <article class="about-img">
+                </article>
+            </div>
+
+            <article class="about">
+                <!--btn container-->
+                <div class="btn-cont">
+                    <button class="tab-btn active" data-id="background">background</button>
+                    <button class="tab-btn" data-id="skills">skills</button>
+                    <button class="tab-btn" data-id="goals">goals</button>
+                </div>
+                <article class="about-content">
+                    <!--single item-->
+                    <div class="content active" id="background">
+                        <h4>Background</h4>
+                        <!--background-->
+                        <p>I graduated in Political Science, from which I got my first experiences in coding doing
+                            statistical analysis with R. Later on I got the opportunity to move to Denmark and sign
+                            up for extra credits at Aarhus University, there I took single courses in data analysis
+                            and Text Mining with Python. Though, my interest in programming was ever present, it wasn't until I found out about Adalab, a Cooding Bootcamp for Web Development, that my
+                            knack for coding turned into a career prospect.</p>
+                    </div>
+                    <!--end of single item-->
+                    <!--single item-->
+                    <div class="content" id="skills">
+                        <h4>Skills</h4>
+                        <p> • <strong>Website layout</strong>: HTML5, CSS3, Flexbox, CSS Grid, SASS.
+                            • <strong>Javascript (ES6)</strong>. JQuery. <strong>React.Js</strong>
+                            • Third-party <strong>API</strong> services.
+                            • <strong>Version control system</strong>: Git.
+                            • <strong>Tools for development</strong> : VS Code, Gulp, Zeplin, Terminal.
+                            • <strong>Agile </strong>project management and Scrum framework.
+                            • <strong>Remote tools</strong>: Slack, Trello, Zoom, LiveServer, Github.• <strong>Fluent in</strong>: English, Spanish, Italian, Catalan.</p>
+                            <br>
+                        <div class="skills-container">
+                            <ul class="list">
+                                <li class="skill"><i class="fab fa-html5"></i></li>
+                                <li class="skill"><i class="fab fa-css3-alt"></i></li>
+                                <li class="skill"><i class="fab fa-react"></i></li>
+                                <li class="skill"><i class="fab fa-js-square"></i></li>
+                                <li class="skill"><i class="fab fa-git-square"></i></li>
+                                <li class="skill"><i class="fab fa-sass"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--end of single item-->
+                    <!--single item-->
+                    <div class="content" id="goals">
+                        <h4>Goals</h4>
+                        <p>While I'm looking for interesting projects to apply to, I'm diligently polishing my
+                            skills and keeping open to new technologies. In the future I'd like to learn more about
+                            deployment tools and Open Sourcing.</p>
+                        <p><strong>I want to build things that I'm proud of.</strong></p>
+                    </div>
+                    <!--end of single item-->
+                </article>
+            </article>
+
+        </div>
+    </section>
+    </section>
+    <div class="menu"> <button class="sidebar-toggle" aria-label="Sidebar Toggle Button">
+            <i class="fas fa-bars"></i> </button></div>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <a href="./index.html"><img class="sidebar-logo" src="./images/logopixel.png" alt="logo"></a>
+        </div>
+        <ul class="sidebar-link">
+            <li class="list-link">
+                <a href="https://github.com/romipaz" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
+            </li>
+            <li class="list-link">
+                <a href="https://www.linkedin.com/in/rominapaz/" target="_blank" rel="noreferrer"><i
+                        class="fab fa-linkedin"></i></a>
+            </li>
+            <li class="list-link">
+                <a href="https://twitter.com/_rpaz" target="_blank" rel="noreferrer"><i class="fab fa-twitter"></i></a>
+            </li>
+        </ul>
+        <ul class="sidebar-index" id="sidebar-index">
+            <li class="list-link"><a href="./index.html#projects">Projects</a></li>
+            <li class="list-link"><a href="./index.html#contact">Contact</a></li>
+            <li class="list-link"><a href="#">About</a></li>
+        </ul>
+        <button class="close-btn" aria-label="Close Sidebar Button">
+            <i class="fas fa-times"></i>
+        </button>
+    </aside>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

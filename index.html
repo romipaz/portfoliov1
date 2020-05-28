@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Personal Portfolio">
@@ -15,12 +16,11 @@
 <body>
     <header>
         <nav class="navbar">
-            <a href="#"><img class="logo" src="./images/logopixel.png" alt="logo"></a>
-            <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+            <a href="#"><img class="logo" id="home" src="./images/logopixel.png" alt="logo"></a>
             <ul class="navbar-ul" id="navbar-ul">
                 <li class="list-link"><a href="#projects">Projects</a></li>
                 <li class="list-link"><a href="#contact">Contact</a></li>
-                <li class="list-link"><a href="#">About</a></li>
+                <li class="list-link"><a href="./about.html">About</a></li>
             </ul>
         </nav>
     </header>
@@ -37,6 +37,7 @@
                 <li class="skill"><i class="fab fa-git-square"></i></li>
             </ul>
         </div>
+
     </main>
 
     <section class="projects-container" id="projects">
@@ -44,7 +45,7 @@
         <div class="project">
 
 
-            <div class="project-img" id="project1"><img src="./images/project1.png" alt=""></div>
+            <div class="project-img" id="project1"><img src="./images/project1.jpg" alt="project 1 preview"></div>
 
 
             <div class="project--side2">
@@ -71,14 +72,14 @@
 
         <div class="project">
 
-            <div class="project-img" id="project2"><img src="./images/project2.png" alt=""></div>
+            <div class="project-img" id="project2"><img src="./images/project2.jpg" alt="project 2 preview"></div>
             <div class="project--side2">
                 <div class="project-header">
                     <ul>
                         <li><a href="https://github.com/Adalab/project-promo-i-module-3-team-4-afternoon"
                                 target="_blank" rel="noreferrer"><i class="fas fa-code"></i></a></li>
-                        <li><a href="http://beta.adalab.es/project-promo-i-module-3-team-4-afternoon/#/"
-                                target="_blank" rel="noreferrer"><i class="fas fa-eye"></i></a></li>
+                        <li><a href="http://beta.adalab.es/project-promo-i-module-3-team-4-afternoon/#/" target="_blank"
+                                rel="noreferrer"><i class="fas fa-eye"></i></a></li>
                     </ul>
                     <h3 class="project-title">Reactive Palettes</h3>
                 </div>
@@ -90,23 +91,25 @@
                     <li class="tool">Remote</li>
                     <li class="tool">Responsive</li>
                     <li class="tool">GIT</li>
+                </ul>
             </div>
         </div>
         </div>
         <div class="project">
 
-            <div class="project-img" id="project3"><img src="./images/project3.png" alt=""></div>
+            <div class="project-img" id="project3"><img src="./images/project3.jpg" alt="project 3 preview"></div>
             <div class="project--side2">
                 <div class="project-header">
                     <ul>
-                        <li><a href="https://github.com/Adalab/modulo-3-evaluacion-final-romipaz"
-                                target="_blank" rel="noreferrer"><i class="fas fa-code"></i></a></li>
-                        <li><a href="http://beta.adalab.es/modulo-3-evaluacion-final-romipaz/"
-                                target="_blank" rel="noreferrer"><i class="fas fa-eye"></i></a></li>
+                        <li><a href="https://github.com/Adalab/modulo-3-evaluacion-final-romipaz" target="_blank"
+                                rel="noreferrer"><i class="fas fa-code"></i></a></li>
+                        <li><a href="http://beta.adalab.es/modulo-3-evaluacion-final-romipaz/" target="_blank"
+                                rel="noreferrer"><i class="fas fa-eye"></i></a></li>
                     </ul>
                     <h3 class="project-title">Rick & Morty DB</h3>
                 </div>
-                <p class="project-sum">Search your favorite character from Rick & Morty TV show on this sci-fi styled database.</p>
+                <p class="project-sum">Search your favorite character from Rick & Morty TV show on this sci-fi styled
+                    database.</p>
                 <ul class="project-tools">
                     <li class="tool">HTML5</li>
                     <li class="tool">SASS</li>
@@ -115,27 +118,64 @@
                     <li class="tool">API</li>
                     <li class="tool">GIT</li>
                 </ul>
-                <div class="arrow-container"><a href="#main"><i class="fas fa-arrow-circle-up"></i></a></div>
+
             </div>
         </div>
         </div>
+        <div class="arrow-container"><a href="#home"><i class="fas fa-arrow-circle-up"></i></a></div>
     </section>
-
-    <footer>
-        <div class="contact" id="contact">
-            <ul class="list">
-                <li class="list-link">
-                    <a href="https://github.com/romipaz" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
-                </li>
-                <li class="list-link">
-                    <a href="https://www.linkedin.com/in/rominapaz/" target="_blank" rel="noreferrer"><i class="fab fa-linkedin"></i></a>
-                </li>
-                <li class="list-link">
-                    <a href="https://twitter.com/_rpaz" target="_blank" rel="noreferrer"><i class="fab fa-twitter"></i></a>
-                </li>
-            </ul>
+    <section class="contact" id="contact">
+        <div class="contact-text">
+            <h4>say hi :)</h4>
+            <p>Send me an <strong><a href="mailto:eccoromi@gmail.com">email</a></strong> or reach me on social media.</p>
         </div>
+
+        <ul class="contact-list">
+            <li class="contact-link">
+                <a href="https://github.com/romipaz" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
+            </li>
+            <li class="contact-link">
+                <a href="https://www.linkedin.com/in/rominapaz/" target="_blank" rel="noreferrer"><i
+                        class="fab fa-linkedin"></i></a>
+            </li>
+            <li class="contact-link">
+                <a href="https://twitter.com/_rpaz" target="_blank" rel="noreferrer"><i class="fab fa-twitter"></i></a>
+            </li>
+        </ul>
+    </section>
+    <div class="menu"> <button class="sidebar-toggle" aria-label="Sidebar Toggle Button">
+            <i class="fas fa-bars"></i> </button></div>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <a href="#"><img class="sidebar-logo" src="./images/logopixel.png" alt="logo"></a>
+        </div>
+        <ul class="sidebar-link">
+            <li class="list-link">
+                <a href="https://github.com/romipaz" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
+            </li>
+            <li class="list-link">
+                <a href="https://www.linkedin.com/in/rominapaz/" target="_blank" rel="noreferrer"><i
+                        class="fab fa-linkedin"></i></a>
+            </li>
+            <li class="list-link">
+                <a href="https://twitter.com/_rpaz" target="_blank" rel="noreferrer"><i class="fab fa-twitter"></i></a>
+            </li>
+        </ul>
+        <ul class="sidebar-index" id="sidebar-index">
+            <li class="list-link"><a href="#projects">Projects</a></li>
+            <li class="list-link"><a href="#contact">Contact</a></li>
+            <li class="list-link"><a href="./about.html">About</a></li>
+        </ul>
+        <button class="close-btn" aria-label="Close Sidebar Button">
+            <i class="fas fa-times"></i>
+        </button>
+    </aside>
+
+    <footer class="footer">
+
+
     </footer>
     <script src="./js/main.js"></script>
 </body>
+
 </html>
