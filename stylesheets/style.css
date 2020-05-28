@@ -729,6 +729,10 @@ a > .fab {
     display: none;
   }
 
+  .tab-btn {
+    font-size: 1.3em;
+  }
+
   .about-section {
     display: flex;
     flex-direction: column;
