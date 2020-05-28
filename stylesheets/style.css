@@ -361,6 +361,8 @@ a > .fab {
 }
 
 /*Footer*/
+
+
 /*CONTACT SECTION*/
 
 .contact {
@@ -374,6 +376,15 @@ a > .fab {
 .contact-text {
   padding: 20px;
   margin: 0;
+}
+
+.contact-text h5{
+  text-align: left;
+  color: var(--dark-color);
+  background-color: var(--secondary-color);
+  font-weight: 600;
+  font-size: 1em;
+  margin-top: 10px;
 }
 .contact h4 {
   font-size: 1.5em;
@@ -398,6 +409,7 @@ a > .fab {
   justify-content: start;
   list-style-type: none;
   margin: 0;
+  padding: 20px;
 }
 
 .contact-link {
