@@ -677,6 +677,8 @@ a > .fab {
   .navbar {
     padding-right: 50px;
     padding-left: 100px;
+    position: fixed;
+    z-index: 1;
   }
 
   .list-link a {
@@ -685,7 +687,7 @@ a > .fab {
   }
 
   .main {
-    height: 70vh;
+    height: 80vh;
   }
 
   .projects-container > h3 {
