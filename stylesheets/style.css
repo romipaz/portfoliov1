@@ -681,13 +681,21 @@ a > .fab {
     z-index: 1;
   }
 
+  .navbar-ul {
+    margin-right: 100px;
+  }
+
+  .navbar>a>img {
+    margin-left: 100px;
+  }
+
   .list-link a {
     font-size: 1.7em;
     padding-right: 50px;
   }
 
   .main {
-    height: 80vh;
+    height: 90vh;
   }
 
   .projects-container > h3 {
@@ -754,6 +762,8 @@ a > .fab {
     justify-content: center;
     margin-left: 100px;
     margin-right: 100px;
+    height: 90vh;
+    margin-top: 0;
   }
 
   .about-center {
